@@ -2,7 +2,36 @@
 <form>
   <h1 class="jumbotron">GitHub Search</h1>
   <div class="form-group">
-      <input type="text" class="form-control" placeholder="Enter Github username here" (keyup)='submitSearch($event)'>
+      <input type="text" class="form-control" placeholder="Enter Github username " (keyup)='submitSearch($event)'>
   </div>  
   </form>
+  <div class="row">
+      <div class="col-md-3">
+          <img src="{{user.avatar_url}}" height="200" class="img-circle">
+      </div>
+      <div class="col-md-6">
+      <table>
+      <tr>
+      <td> Overview: </td>
+      <td class="label">{{user.name}}</td>
+      </tr>
+      <tr>
+      <td>Repositories: </td>
+      <td class="label">{{user.public_repos}}</td>
+      </tr>
+      <tr>
+      <td>Stars: </td>
+          <td class="label">{{user.stars}}</td>
+          </tr>
+      <tr>
+         <td>Followers: </td>
+        <td class="label">{{user.followers}}</td>
+        </tr>
+        <tr>
+         <td>Following: </td>
+          <td class="label">{{user.following}}</td>
+           </tr>
+      </table>
+      </div>
+      </div>
 </div>
