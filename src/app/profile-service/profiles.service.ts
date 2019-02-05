@@ -17,7 +17,7 @@ export class ProfilesService {
     console.log("Service already ")
     this.username="naimar1";
     this.user= new User("");
-    this.repo= new Repository ("",0,"",0,0, new Date());
+    this.repo= new Repository ("",0,"",0,0,"", new Date());
 
   }
   getRepoInfo(username){
@@ -28,6 +28,7 @@ export class ProfilesService {
       bio:string,
       followers:number,
       following:number,
+      html_url:string,
       created_at:Date;
 
     }
