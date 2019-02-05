@@ -22,3 +22,7 @@ and then also it has to show you the  all repositories of that user .
 * cd Quotes
 * code . (if you are using visual studio)
 * atom .
+
+## Known Bugs
+Hope that my codes of this page is clear and understandable,
+There are no errors, by mistake if you find them please contact me for the below address.
