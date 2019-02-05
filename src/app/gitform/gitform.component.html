@@ -1,42 +1,46 @@
 <div class="container">
-<form>
+<form (ngSubmit)='submitSearch()'>
   <h1 class="jumbotron">GitHub Search</h1>
   <div class="form-group">
-      <input type="text" class="form-control" placeholder="Enter Github username " (keyup)='submitSearch($event)'>
+        
+        <input type="text" [(ngModel)]="user.name"  id="user" name="name"required>
+        
+      <!-- <input type="text" class="form-control" placeholder="Enter Github username " > -->
+      <button type="submit">Go</button>
   </div>  
   </form>
   <div class="row">
       <div class="col-md-3">
-          <img src="{{user.avatar_url}}" height="200" class="img-circle">
+          <img src="https://cdn.shopify.com/s/files/1/0051/4802/products/mug-black_480x480_crop_center.png?v=1520973899" height ="200" width="180" class="img-circle">
       </div>
       <div class="col-md-6">
       <table>
       <tr>
       <td> Name: </td>
-      <td class="label">{{user.name}}</td>
+      <td class="label">{{repos.name}}</td>
       </tr>
       <tr>
       <td>Repositories: </td>
-      <td class="label">{{user.public_repos}}</td>
+      <td class="label">{{repos.public_repo}}</td>
       </tr>
       <tr>
       <td>Bio: </td>
-          <td class="label">{{user.bio}}</td>
+          <td class="label">{{repos.bio}}</td>
           </tr>
       <tr>
          <td>Followers: </td>
-        <td class="label">{{user.followers}}</td>
+        <td class="label">{{repos.followers}}</td>
         </tr>
         <tr>
          <td>Following: </td>
-          <td class="label">{{user.following}}</td>
+          <td class="label">{{repos.following}}</td>
            </tr>
            <tr>
             <td>Created at: </td>
-             <td class="label">{{user.created_at}}</td>
+             <td class="label">{{repos.created_at}}</td>
               </tr>
       </table>
       </div>
       </div>
-      <a href="{{user.html_url}}" class="btn btn-danger" id="view">View All</a>
+      <a href="{{repos.html_url}}" class="btn btn-danger" id="view">View Repos</a>
 </div>
