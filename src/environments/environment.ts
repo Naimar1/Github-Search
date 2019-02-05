@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apikey:'?access_token=24d9c5f39e4369d5313887611c1e610a8ae425f6',
+  
 };
 
 /*
