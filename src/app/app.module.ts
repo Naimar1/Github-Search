@@ -7,7 +7,7 @@ import { GitformComponent } from './gitform/gitform.component';
 import { DirectnameDirective } from './directname.directive';
 import { DateCountPipe } from './date-count.pipe';
 import {HttpClientModule} from '@angular/common/http'
-
+import {RoutingModule} from './routing/routing.module'
 
 
 @NgModule({
@@ -21,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    RoutingModule,
     HttpClientModule
   ],
   providers: [],
