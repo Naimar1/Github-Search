@@ -18,7 +18,7 @@ This project is about enter a username for the github account and then display s
 and then also it has to show you the  all repositories of that user .
 
 ## Setup/Installation Requirements
-* link to visit site: https://naimar1.github.io/Quotes/
+* link to visit site: https://naimar1.github.io/Github-Search/
 * cd Quotes
 * code . (if you are using visual studio)
 * atom .
