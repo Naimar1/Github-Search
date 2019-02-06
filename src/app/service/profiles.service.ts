@@ -23,7 +23,7 @@ export class ProfilesService {
     //Check(){
     interface ApiResponse{
       name:string,
-      public_repo: number,
+      public_repos: number,
       bio:string,
       followers:number,
       following:number,
@@ -32,11 +32,11 @@ export class ProfilesService {
 
     }
     let promise =new Promise((resolve,reject)=>{
-    this.http.get<ApiResponse>("https://api.github.com/users/"+ user+"?access_token" +environment.apikey).toPromise() .then(response=>{
+    this.http.get<ApiResponse>("https://api.github.com/users/"+ user+"?access_token=c1315da83c14c4d75ae112230f2bcce0d0260666").toPromise() .then(response=>{
     //.subscribe((data: any)=>{
       // console.log(data);
       this.repo.name = response.name;
-      this.repo.public_repo = response.public_repo;
+      this.repo.public_repo = response.public_repos;
       this.repo.bio = response.bio;
       this.repo.followers = response.followers;
       this.repo.following = response.following;
